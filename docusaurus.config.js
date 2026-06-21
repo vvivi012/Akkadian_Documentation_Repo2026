@@ -27,8 +27,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'BranchOut', // Usually your GitHub org/user name.
-  projectName: 'Akkadian_Website', // Usually your repo name.
+  organizationName: 'vvivi012', // Usually your GitHub org/user name.
+  projectName: 'Akkadian_Documentation_Repo2026', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
