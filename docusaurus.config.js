@@ -93,14 +93,19 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorial (to get rid of)',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog (to get rid of?)', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
             label: 'GitHub',
             position: 'right',
           },
+          {to: '/about', label: 'About', position: 'left'},
+          {type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},
+          {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Educational Content', position: 'left'},
+          {to: '/past-workshops', label: 'Past Workshops', position: 'left'},
+          {type: 'docSidebar', sidebarId: 'otherSidebar', label: 'Other Resources', position: 'left'}
         ],
       },
       footer: {
