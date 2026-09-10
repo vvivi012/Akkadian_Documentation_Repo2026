@@ -49,8 +49,8 @@ const config = {
           sidebarPath: './sidebars.js',
        
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
+          /*editUrl:
+            'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',*/
         },
         blog: {
           showReadingTime: true,
@@ -60,8 +60,8 @@ const config = {
           },
 
           // Remove this to remove the "edit this page" links--should remove after publishing site
-          editUrl:
-            'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
+          /*editUrl:
+            'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',*/
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
+          /*{
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -100,7 +100,7 @@ const config = {
             href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
           {to: '/about', label: 'About', position: 'left'},
           {type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},
           {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Educational Content', position: 'left'},
