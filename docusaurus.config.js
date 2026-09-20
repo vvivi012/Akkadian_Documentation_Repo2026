@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Akkadian Translation Project',
   tagline: 'Akkadian translation documentation website.',
-  favicon: 'img/favicon.ico', // to be changed later
+  favicon: 'img/favicon_io/favicon.ico', // to be changed later
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -68,7 +68,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -85,8 +85,10 @@ const config = {
       navbar: {
         title: 'Akkadian Translation Project',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Ex. Star Logo',
+          src: 'img/star.svg',
+          srcDark: 'img/star_white.svg',
+          className: 'navbar-star-logo',
         },
         items: [
           /*{
@@ -95,12 +97,12 @@ const config = {
             position: 'left',
             label: 'Tutorial (to get rid of)',
           },
-          {to: '/blog', label: 'Blog (to get rid of?)', position: 'left'},
+          {to: '/blog', label: 'Blog (to get rid of?)', position: 'left'},*/
           {
             href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
             label: 'GitHub',
             position: 'right',
-          },*/
+          },
           {to: '/about', label: 'About', position: 'left'},
           {type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},
           {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Educational Content', position: 'left'},
@@ -115,24 +117,24 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'About Us',
+                to: '/about',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Contact Us',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Stack Overflow (editable but idk what to put)',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'Discord (should we make like. a carrd or something)',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'X',
+                label: 'X (i dont even know)',
                 href: 'https://x.com/docusaurus',
               },
             ],
@@ -146,12 +148,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Akkadian Translation Project. Built with Docusaurus. (do we have copyright?)`,
       },
       prism: {
         theme: prismThemes.github,

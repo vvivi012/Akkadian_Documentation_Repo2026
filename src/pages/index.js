@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about">
-            learn about us (testing landing page)
+            Learn about the project!
           </Link>
         </div>
       </div>
@@ -34,29 +34,26 @@ function Features() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <div className="col col--4">
+          <div className="col col--6">
             <div className="text--center">
-              <h2>ignore the above</h2>
-              <p>
+              <h2>About the Project</h2>
+              <p className="text--left">
                 brief desc
               </p>
             </div>
           </div>
 
-          <div className="col col--4">
+          <div className="col col--6">
             <div className="text--center">
-              <h2>placeholder default stuff</h2>
-              <p>
-                nav site 1
-              </p>
-            </div>
-          </div>
-
-          <div className="col col--4">
-            <div className="text--center">
-              <h2>third column</h2>
-              <p>
-                extra info
+              <h2>Getting Started</h2>
+              <p className="text--left">
+                You might find some of these links helpful:
+                <br className="custom-break"/>
+                <ul>
+                <li>Want to learn more about the team? Try <a href="/about">this link</a>.</li>
+                <li>Curious about how the translation system was made? Visit <a href="/docs/creation/creation%201%20overview">our project overview</a>.</li>
+                <li>Interested in learning more about Natural Language Processing or Neural Networks? See <a href="/docs/education/education%201%20overview">our educational content</a> or have a look at some <a href="/docs/other/1%20other%20additional%20videos">other resources</a>.</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -65,7 +62,8 @@ function Features() {
     </section>
   );
 }
-
+// lowkey no idea what the description thing is? meta data maybe?
+// padding-top--xl versus padding-top--lg
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -73,8 +71,8 @@ export default function Home() {
       title={`${siteConfig.title} (custom tab title)`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      <main className="padding-top--xl padding-bottom--xl">
+        <Features />
       </main>
     </Layout>
   );
