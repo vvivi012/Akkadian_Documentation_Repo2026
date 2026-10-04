@@ -14,6 +14,7 @@
   --ifm-color-primary-lighter: #6181c7;
   --ifm-color-primary-lightest: #7795d7;
   --ifm-code-font-size: 95%;
+  --ifm-leading-desktop: 1;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -35,7 +36,7 @@ br.custom-break {
   margin-top: 8px; /* not working??? */
 }
 
-/* none of this is working */
+/* none of this matters i guess */
 .navbar-star-logo {
   mask: url('/img/star.svg') no-repeat center / contain;
   -webkit-mask: url('/img/star.svg') no-repeat center / contain;
@@ -51,4 +52,15 @@ br.custom-break {
 
 .navbar__brand:hover .navbar-star-logo {
   background-color: #3b5b9f;
+}
+
+.purple-text {
+  color: rebeccapurple;
+}
+
+.markdown p:has(+ ul),
+.markdown p:has(+ ol),
+.theme-doc-markdown p:has(+ ul),
+.theme-doc-markdown p:has(+ ol) {
+  margin-bottom: 0.5rem;
 }

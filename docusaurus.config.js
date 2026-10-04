@@ -88,7 +88,6 @@ const config = {
           alt: 'Ex. Star Logo',
           src: 'img/star.svg',
           srcDark: 'img/star_white.svg',
-          className: 'navbar-star-logo',
         },
         items: [
           /*{
@@ -104,8 +103,8 @@ const config = {
             position: 'right',
           },
           {to: '/about', label: 'About', position: 'left'},
-          {type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},
-          {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Educational Content', position: 'left'},
+          /*{type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},*/
+          {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Creating the System + Educational Content', position: 'left'},
           {to: '/past-workshops', label: 'Past Workshops', position: 'left'},
           {type: 'docSidebar', sidebarId: 'otherSidebar', label: 'Other Resources', position: 'left'}
         ],
@@ -143,7 +142,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Blog (please dont click this)',
                 to: '/blog',
               },
               {

@@ -54,6 +54,7 @@ function Features() {
                 <li>Curious about how the translation system was made? Visit <a href="/docs/creation/creation%201%20overview">our project overview</a>.</li>
                 <li>Interested in learning more about Natural Language Processing or Neural Networks? See <a href="/docs/education/education%201%20overview">our educational content</a> or have a look at some <a href="/docs/other/1%20other%20additional%20videos">other resources</a>.</li>
                 </ul>
+                <small>i made this before i realized creation + education were merged into one, this is a note to change the words/hyperlinks! also maybe figure out a better way to split so the tab up there doesn't look mega huge</small>
               </p>
             </div>
           </div>
