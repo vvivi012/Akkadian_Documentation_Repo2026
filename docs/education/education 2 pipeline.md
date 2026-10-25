@@ -7,7 +7,7 @@ sidebar_position: 2
 On this page, we provide a high-level overview of the machine translation pipeline. Specifics of certain parts are later described in greater detail in their own, respective sections. 
 
 
-## 1. Collect Akkadian-to-English Datasets
+## 1\. Collect Akkadian-to-English Datasets
 
 The first step is to gather data to train our model. For machine translation, these datasets are usually in the form of a **parallel corpus**. Akkadian was written in **cuneiform**, so some of our sources give a **transliteration** of the text in Latin letters, while others contain data in cuneiform signs. The formats of the datasets below vary, but are generally plain-text files (.txt or .csv.). The datasets used to train our machine are publicly available and include:
 1. https://www.kaggle.com/datasets/manwithacat/mtm24-akkadian-transliteration/data
@@ -27,7 +27,7 @@ Typically, a dataset will contain the original text in Akkadian, a transcription
 4. **Cuneiform**: The wedge-shaped writing system used in Akkadian.
 
 
-## 2. Clean and Preprocess the Datasets 
+## 2\. Clean and Preprocess the Datasets 
 
 After collecting our datasets, we need to ensure that the text is clean and consistent. This step is called preprocessing, and includes cleaning the text by removing corrupted symbols or correcting formatting issues. Many language models first split text into small pieces called **tokens**. Since we used a pretrained ByT5 model, this step was skipped. In particular, ByT5 is **tokenizer**-free and processes text directly as sequences of **bytes** rather than splitting it into words or subwords. However, we still cleaned the datasets to remove corrupted or inconsistent text before training.
 
@@ -37,7 +37,7 @@ After collecting our datasets, we need to ensure that the text is clean and cons
 3. **Byte**: The unit of information used to store text.
 
 
-## 3. Filter Low-Quality Translations 
+## 3\. Filter Low-Quality Translations 
 
 The datasets we used come from many different sources, with some containing translations that are more trustworthy than others; we keep the datasets that best fit our task. To decide, we compared each translation to a small set of trusted examples and gave it a **similarity score**. A computer can do this by turning each English sentence into a list of numbers, otherwise known as an **embedding**, so that sentences with similar meanings get similar numbers. Only the highest-scoring translations are kept for training. 
 
@@ -46,7 +46,7 @@ The datasets we used come from many different sources, with some containing tran
 2. **Similarity score**: a scoring system measuring how similar two sentences are, with higher scores corresponding to sentences that are more similar. 
 
 
-## 4. Data Augmentation
+## 4\. Data Augmentation
 
 Akkadian is a low resource language, so translated datasets that are readily available online are limited. To combat this, we create extra practice examples to expand our dataset, a process known as **data augmentation**. We ask a **large language model** (LLM) to generate Akkadian-English pairs that follow the style of real ones; the LLM creates variations of existing pairs by changing details such as names, quantities, and dates. This gives our model more variety to learn from. Because a model wrote them, they are called **synthetic** examples.
 
@@ -56,7 +56,7 @@ Akkadian is a low resource language, so translated datasets that are readily ava
 3. **Large language model (LLM)**: An AI system trained on massive amounts of data so that it can process and generate human-like language.
 
 
-## 5. Continued Training ByT5 
+## 5\. Continued Training ByT5 
 
 **ByT5**, the model from which we built our Akkadian-to-English model, is already trained on many languages; it was trained on mC4, a large collection of text spanning 102 languages. It was trained without any supervised training, meaning it learned to recognize general patterns of language but was never taught to translate. We trained it on the datasets we gathered, including both real and synthetic examples, so that it became familiar with Akkadian-to-English translation.
 
@@ -66,7 +66,7 @@ Akkadian is a low resource language, so translated datasets that are readily ava
 3. **Transformer**: A neural network design that processes all tokens of input sequences in parallel, instead of one at a time. The mechanism that transformers use is known as attention, which will be explained in great detail later.
 
 
-## 6. Fine Tuning
+## 6\. Fine Tuning
 
 ByT5 comes with a broad understanding of language, but it has never been taught to translate Akkadian. It has to be fine-tuned before it can be used for a specific task. **Fine-tuning** means training the model on examples of the exact job we want it to do: Akkadian sentences paired with their English translations. The purpose is to have the model adapt to Akkadian without losing what it already knows. 
 
@@ -74,7 +74,7 @@ ByT5 comes with a broad understanding of language, but it has never been taught 
 1. **Fine-tuning**: Further training of a pretrained model on examples of a specific task, so it gets better at that specific task.
 
 
-## 7. Evaluating the Translation Model
+## 7\. Evaluating the Translation Model
 
 To check how good our translations are, we compare the model's English output with human translations of the same Akkadian sentences using two **metrics**: **BLEU** and **chrF++**. For both, a higher score is better. We combine them into one final score by taking their **geometric mean**. 
 
@@ -90,5 +90,3 @@ To check how good our translations are, we compare the model's English output wi
 3. https://huggingface.co/google/byt5-xl 
 4. https://huggingface.co/google/byt5-base 
 5. https://huggingface.co/blog/andmholm/what-is-a-transformer
-
-<small>hey so idk how to cite these but whatever</small>

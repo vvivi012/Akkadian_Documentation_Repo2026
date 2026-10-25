@@ -38,7 +38,14 @@ function Features() {
             <div className="text--center">
               <h2>About the Project</h2>
               <p className="text--left">
-                brief desc
+                Language shouldn't determine who gets access to quality technologies.
+                As artificial intelligence (AI) becomes more central to our daily lives, the gap in AI performance 
+                between high-resource and low-resource languages risks leaving many communities behind. 
+                This website uses an Akkadian machine translation system as a case study to teach 
+                natural language processing (NLP). Our goal is to explain how it was built: 
+                finding and cleaning source datasets, training the model, and fine-tuning it for better accuracy. 
+                By making the process behind creating translation systems for low-resource languages transparent 
+                and easy to understand, we hope to raise awareness of this digital gap and show how it can be tackled. 
               </p>
             </div>
           </div>
