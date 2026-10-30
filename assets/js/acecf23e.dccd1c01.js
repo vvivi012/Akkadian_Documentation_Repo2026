@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkakkadian_site=self.webpackChunkakkadian_site||[]).push([["3220"],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);

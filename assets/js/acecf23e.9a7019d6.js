@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkakkadian_site=self.webpackChunkakkadian_site||[]).push([["3220"],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/Akkadian_Documentation_Repo2026/blog","blogTitle":"Blog","authorsListPath":"/Akkadian_Documentation_Repo2026/blog/authors"}')}}]);

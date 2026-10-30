@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkakkadian_site=self.webpackChunkakkadian_site||[]).push([["6662"],{2680(a){a.exports=JSON.parse('{"metadata":{"permalink":"/Akkadian_Documentation_Repo2026/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
