@@ -76,8 +76,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} (custom tab title)`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Translating Akkadian and low-resource languages using machine learning.">
       <HomepageHeader />
       <main className="padding-top--xl padding-bottom--xl">
         <Features />

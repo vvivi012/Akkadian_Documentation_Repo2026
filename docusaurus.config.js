@@ -99,7 +99,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog (to get rid of?)', position: 'left'},*/
           {
-            href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
+            href: 'https://github.com/soph-xy/Akkadian_Documentation_Repo2026',
             label: 'GitHub',
             position: 'right',
           },
