@@ -20,14 +20,14 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Akkadian_Documentation_Repo2026/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vvivi012', // Usually your GitHub org/user name.
+  organizationName: 'soph-xy', // Usually your GitHub org/user name.
   projectName: 'Akkadian_Documentation_Repo2026', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
